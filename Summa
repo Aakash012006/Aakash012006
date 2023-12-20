@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int square(int *a)
+{
+    int b;
+    *a=45;
+    b=*a*21;
+    printf("mult : %d\n",b);
+    return *a;
+}
+void main()
+{
+    int a,b;
+    printf("Enter side of square : ");
+    scanf("%d",&a);
+    b=a*a;
+    printf("Area of square is : %d\n",b);
+    square(&a);
+    printf("ref : %d",a);
+}
