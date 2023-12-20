@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+void square(int a)
+{
+    printf("Area of square is : %d\n",a);
+}
+void main()
+{
+    int a,b,v;
+    printf("Enter side of square : ");
+    scanf("%d",&a);
+    square(a);
+}
