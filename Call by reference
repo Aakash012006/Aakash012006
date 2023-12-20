@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int square(int *a)
+{
+    *a=10;
+    printf("Area of square is : %d\n",*a);
+    return *a;
+}
+    
+
+void main()
+{
+    int a,b,v;
+    printf("Enter side of square : ");
+    scanf("%d",&a);
+    
+    
+    square(&a);
+    printf(" Ref : %d",a);
+    
+}
