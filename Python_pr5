@@ -1,0 +1,9 @@
+def sort_zeros_ones(input_list):
+    zeros_count = input_list.count(0)
+    ones_count = len(input_list) - zeros_count
+    sorted_list = [0] * zeros_count + [1] * ones_count
+    return sorted_list
+
+input_list = [0, 1, 0, 1, 1, 0, 1, 0, 1, 0]
+output_list = sort_zeros_ones(input_list)
+print(output_list)
